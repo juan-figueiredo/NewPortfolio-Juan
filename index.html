@@ -46,7 +46,7 @@
           <a href="https://discord.gg/QCHyeCGq" target="_blank"><i class='bx bxl-discord'></i></a>
         </div>
 
-        <a href="./assets/Porfolio Juan Figueiredo (DEV) (2).pdf" class="btn" download="">Download CV</a>
+        <a href="./assets/portfolio.juan.pdf" class="btn" download="Curriculo Juan Figueiredo">Download CV</a>
     </div>
   </section>
 
@@ -176,20 +176,23 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contato</h2>
 
-    <form action="#">
+    <form action="https://formsubmit.co/juan.figueiredo13@hotmail.com" method="POST">
 
       <div class="input-box">
-        <input type="text" placeholder="Nome Completo">
-        <input type="email" placeholder="Email">
+        <input type="text" name="name" placeholder="Nome Completo" required>
+        <input type="email" placeholder="Email" name="email" required>
       </div>
 
       <div class="input-box">
-        <input type="number" placeholder="Telefone">
-        <input type="text" placeholder="Assunto">
+        <input type="number" placeholder="Telefone" name="Telefone" required>
+        <input type="text" placeholder="Assunto" name="Assunto" required>
       </div>
 
-      <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem" name="message" required></textarea>
       <input type="submit" value="Enviar" class="btn">
+      <input type="hidden" name="_subject" value="Novo Contato">
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
     </form>
   </section>
 
@@ -218,7 +221,7 @@
         <a href="#">Suporte</a>
       </li>
     </ul>
-    <p class="copyright">Juan Figueiredo | Todos os direitos reservados</p>
+    <p class="copyright">Transformando ideias em realidade. © Juan Figueiredo - Todos os Direitos Reservados.</p>
   </footer>
 
   <script src="./script.js"></script>

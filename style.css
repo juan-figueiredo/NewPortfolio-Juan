@@ -15,6 +15,7 @@
   --second-bg-color: #101010;
   --text-color: white;
   --main-color: #FA0DD0;
+  --blue: #090DAB;
   --main-color-transparent: #fa0dce7c;
   --gradient:linear-gradient(
         to right, #090DAB,#CA35E9
@@ -162,7 +163,7 @@ span{
 .btn{
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: var(--main-color);
+  background:transparent;
   box-shadow: 0 0 25px var(--main-color);
   border-radius: 4rem;
   font-size: 1.6rem;
@@ -495,7 +496,7 @@ span{
   bottom: 0;
   width: 100%;
   padding: 40px 0;
-  background-color: var(--main-color);
+  background-color: #161616;
 
 }
 .footer .social{
