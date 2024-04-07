@@ -22,3 +22,24 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 }
+
+
+document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+  event.preventDefault(); // Impede o comportamento padrão de envio do formulário
+
+  // Aqui você pode adicionar o código para enviar o formulário usando JavaScript
+
+  // Por exemplo, você pode usar o método fetch() para enviar os dados do formulário para o servidor
+  fetch('https://formsubmit.co/juan.figueiredo13@hotmail.com', {
+    method: 'POST',
+    body: new FormData(this) // Isso envia os dados do formulário
+  })
+  .then(response => {
+    // Aqui você pode lidar com a resposta do servidor, como exibir uma mensagem de sucesso
+    console.log('Resposta do servidor:', response);
+  })
+  .catch(error => {
+    // Aqui você pode lidar com erros de envio, como exibir uma mensagem de erro
+    console.error('Erro:', error);
+  });
+});
